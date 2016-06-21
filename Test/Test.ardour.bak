@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3001" name="Test" sample-rate="44100" id-counter="1362" event-counter="958">
+<Session version="3001" name="Test" sample-rate="44100" id-counter="1362" event-counter="982">
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
     <Port name="MIDI Clock out" direction="output"/>
