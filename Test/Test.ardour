@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3001" name="Test" sample-rate="44100" id-counter="516" event-counter="660">
+<Session version="3001" name="Test" sample-rate="44100" id-counter="545" event-counter="738">
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
     <Port name="MIDI Clock out" direction="output"/>
@@ -192,11 +192,9 @@
     <Route id="356" name="Drum" default-type="audio" active="yes" phase-invert="00" denormal-protection="no" meter-point="MeterPostFader" meter-type="MeterPeak" order-key="2" self-solo="no" soloed-by-upstream="0" soloed-by-downstream="0" solo-isolated="no" solo-safe="no" monitoring="" saved-meter-point="MeterPostFader" mode="Normal">
       <IO name="Drum" id="375" direction="Input" default-type="audio" user-latency="0">
         <Port type="audio" name="Drum/audio_in 1">
-          <Connection other="Hydrogen:out_L"/>
           <Connection other="system:capture_1"/>
         </Port>
         <Port type="audio" name="Drum/audio_in 2">
-          <Connection other="Hydrogen:out_R"/>
           <Connection other="system:capture_2"/>
         </Port>
       </IO>
@@ -242,15 +240,13 @@
       <Controllable name="recenable" id="386" flags="Toggle" value="0.000000000000"/>
       <Diskstream flags="Recordable" playlist="Drum.2" name="Drum" id="388" speed="1.000000" capture-alignment="Automatic" record-safe="no" channels="2"/>
     </Route>
-    <Route id="436" name="yoshimi" default-type="audio" active="yes" phase-invert="00" denormal-protection="no" meter-point="MeterPostFader" meter-type="MeterPeak" order-key="3" self-solo="yes" soloed-by-upstream="0" soloed-by-downstream="0" solo-isolated="no" solo-safe="no" monitoring="" saved-meter-point="MeterPostFader" mode="Normal">
+    <Route id="436" name="yoshimi" default-type="audio" active="yes" phase-invert="00" denormal-protection="no" meter-point="MeterPostFader" meter-type="MeterPeak" order-key="3" self-solo="no" soloed-by-upstream="0" soloed-by-downstream="0" solo-isolated="no" solo-safe="no" monitoring="" saved-meter-point="MeterPostFader" mode="Normal">
       <IO name="yoshimi" id="455" direction="Input" default-type="audio" user-latency="0">
         <Port type="audio" name="yoshimi/audio_in 1">
           <Connection other="system:capture_1"/>
-          <Connection other="yoshimi:right"/>
         </Port>
         <Port type="audio" name="yoshimi/audio_in 2">
           <Connection other="system:capture_2"/>
-          <Connection other="yoshimi:left"/>
         </Port>
       </IO>
       <IO name="yoshimi" id="456" direction="Output" default-type="audio" user-latency="0">
@@ -261,7 +257,7 @@
           <Connection other="Master/audio_in 2"/>
         </Port>
       </IO>
-      <Controllable name="solo" id="438" flags="Toggle" value="1.000000000000"/>
+      <Controllable name="solo" id="438" flags="Toggle" value="0.000000000000"/>
       <Controllable name="mute" id="440" flags="Toggle" value="0.000000000000"/>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="no"/>
       <Automation/>
@@ -395,7 +391,7 @@
       </Region>
     </Playlist>
     <Playlist id="469" name="yoshimi.1" type="audio" orig-track-id="436" frozen="no" combine-ops="0">
-      <Region name="yoshimi-1.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="1152000" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="497" type="audio" first-edit="nothing" source-0="472" source-1="474" master-source-0="472" master-source-1="474" channels="2">
+      <Region name="yoshimi-1.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="54272" length="1012736" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="497" type="audio" first-edit="nothing" source-0="472" source-1="474" master-source-0="472" master-source-1="474" channels="2">
         <Envelope default="yes"/>
         <FadeIn>
           <AutomationList automation-id="fadein" id="498" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
@@ -471,6 +467,84 @@
     <Protocol name="Wiimote" active="no"/>
   </ControlProtocols>
   <Extra>
+    <UI>
+      <Window name="key-editor" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="rc-options-editor" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="session-options-editor" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="speaker-config" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="about" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="add-routes" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="add-video" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="inspector" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-midi-setup" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="video-export" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="bundle-manager" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="locations" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-clock" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-connection-manager" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="midi-connection-manager" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-28-52" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-28-49" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-28-55" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-28-56" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-105-129" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-105-126" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-105-132" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-105-133" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-356-380" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-356-377" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-356-383" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-356-384" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-436-460" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-436-457" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-436-463" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-436-464" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <GUIObjectState>
+        <Object id="route 28" color="36420:30777:61555"/>
+        <Object id="rtav 28" height="64" visible="1"/>
+        <Object id="automation 51" height="64" visible="0"/>
+        <Object id="automation 54" height="64" visible="0"/>
+        <Object id="automation 28 10/0/0" height="64" visible="0"/>
+        <Object id="automation 38" height="64" visible="0"/>
+        <Object id="automation 42" height="64" visible="0"/>
+        <Object id="strip 28" visible="1" strip-width="Wide">
+          <Object id="processor 49"/>
+        </Object>
+        <Object id="route 105" color="58981:33914:29490"/>
+        <Object id="rtav 105" height="64" visible="1"/>
+        <Object id="automation 128" height="64" visible="0"/>
+        <Object id="automation 131" height="64" visible="0"/>
+        <Object id="automation 105 10/0/0" height="64" visible="0"/>
+        <Object id="automation 115" height="64" visible="0"/>
+        <Object id="automation 119" height="64" visible="0"/>
+        <Object id="strip 105" visible="1">
+          <Object id="processor 126"/>
+        </Object>
+        <Object id="strip 314" visible="1">
+          <Object id="processor 335"/>
+        </Object>
+        <Object id="route 356" color="36371:58981:29490"/>
+        <Object id="rtav 356" height="64" visible="1"/>
+        <Object id="automation 379" height="64" visible="0"/>
+        <Object id="automation 382" height="64" visible="0"/>
+        <Object id="automation 356 10/0/0" height="64" visible="0"/>
+        <Object id="automation 366" height="64" visible="0"/>
+        <Object id="automation 370" height="64" visible="0"/>
+        <Object id="strip 356" visible="1" strip-width="Wide">
+          <Object id="processor 377"/>
+        </Object>
+        <Object id="route 436" color="29490:58981:55049"/>
+        <Object id="rtav 436" height="64" visible="1"/>
+        <Object id="automation 459" height="64" visible="0"/>
+        <Object id="automation 462" height="64" visible="0"/>
+        <Object id="automation 436 10/0/0" height="64" visible="0"/>
+        <Object id="automation 446" height="64" visible="0"/>
+        <Object id="automation 450" height="64" visible="0"/>
+        <Object id="strip 436" visible="1" strip-width="Wide">
+          <Object id="processor 457"/>
+        </Object>
+      </GUIObjectState>
+    </UI>
     <Videomonitor active="no"/>
   </Extra>
 </Session>

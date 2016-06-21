@@ -6,7 +6,15 @@
       <Press/>
       <Release/>
     </Buttons>
-    <Selection/>
+    <Selection>
+      <RouteView id="356"/>
+    </Selection>
     <RegionList sort-type="ByEndInFile" sort-ascending="yes" show-all="no" show-automatic-regions="yes"/>
   </Editor>
+  <Mixer narrow-strips="no" show-mixer="no" show-mixer-list="yes" maximised="no">
+    <PluginOrder/>
+  </Mixer>
+  <Meterbridge show-meterbridge="no">
+    <geometry x-size="600" y-size="400" x-pos="1" y-pos="1"/>
+  </Meterbridge>
 </instant>
