@@ -1,99 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UndoHistory>
-  <UndoTransaction tv-sec="1466542655" tv-usec="92058" name="capture">
-    <StatefulDiffCommand obj-id="138" type-name="ARDOUR::AudioPlaylist">
-      <Changes>
-        <Regions>
-          <Add id="166"/>
-        </Regions>
-      </Changes>
-    </StatefulDiffCommand>
-  </UndoTransaction>
-  <UndoTransaction tv-sec="1466542662" tv-usec="114552" name="region drag">
-    <StatefulDiffCommand obj-id="166" type-name="ARDOUR::AudioRegion">
-      <Changes>
-        <position from="59392" to="0"/>
-      </Changes>
-    </StatefulDiffCommand>
-    <MementoCommand obj-id="19" type-name="SelectionMemento">
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="166"/>
-        </Selection>
-      </SelectionMemento>
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="166"/>
-        </Selection>
-      </SelectionMemento>
-    </MementoCommand>
-  </UndoTransaction>
-  <UndoTransaction tv-sec="1466542691" tv-usec="586470" name="normalize">
-    <StatefulDiffCommand obj-id="166" type-name="ARDOUR::AudioRegion">
-      <Changes>
-        <scale-amplitude from="1" to="4.79068565369"/>
-      </Changes>
-    </StatefulDiffCommand>
-    <MementoCommand obj-id="19" type-name="SelectionMemento">
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="166"/>
-        </Selection>
-      </SelectionMemento>
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="166"/>
-        </Selection>
-      </SelectionMemento>
-    </MementoCommand>
-  </UndoTransaction>
-  <UndoTransaction tv-sec="1466542709" tv-usec="471091" name="delete objects">
-    <StatefulDiffCommand obj-id="138" type-name="ARDOUR::AudioPlaylist">
-      <Changes>
-        <Regions>
-          <Remove id="166"/>
-        </Regions>
-      </Changes>
-    </StatefulDiffCommand>
-    <MementoCommand obj-id="19" type-name="SelectionMemento">
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="166"/>
-        </Selection>
-      </SelectionMemento>
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection/>
-      </SelectionMemento>
-    </MementoCommand>
-  </UndoTransaction>
-  <UndoTransaction tv-sec="1466542722" tv-usec="660018" name="capture">
-    <StatefulDiffCommand obj-id="138" type-name="ARDOUR::AudioPlaylist">
-      <Changes>
-        <Regions>
-          <Add id="227"/>
-        </Regions>
-      </Changes>
-    </StatefulDiffCommand>
-  </UndoTransaction>
-  <UndoTransaction tv-sec="1466542758" tv-usec="967767" name="normalize">
-    <StatefulDiffCommand obj-id="227" type-name="ARDOUR::AudioRegion">
-      <Changes>
-        <scale-amplitude from="1" to="6.11464357376"/>
-      </Changes>
-    </StatefulDiffCommand>
-    <MementoCommand obj-id="19" type-name="SelectionMemento">
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="227"/>
-        </Selection>
-      </SelectionMemento>
-      <SelectionMemento mouse-mode="MouseObject" zoom="2048" left-frame="0" y-origin="0,000000">
-        <Selection>
-          <Region id="227"/>
-        </Selection>
-      </SelectionMemento>
-    </MementoCommand>
-  </UndoTransaction>
   <UndoTransaction tv-sec="1466542832" tv-usec="498266" name="split">
     <StatefulDiffCommand obj-id="138" type-name="ARDOUR::AudioPlaylist">
       <Changes>
@@ -412,6 +318,122 @@
       <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="337408" y-origin="0,000000">
         <Selection>
           <Region id="561"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1466544672" tv-usec="153054" name="insert file">
+    <StatefulDiffCommand obj-id="639" type-name="ARDOUR::AudioPlaylist">
+      <Changes>
+        <Regions>
+          <Add id="664"/>
+        </Regions>
+      </Changes>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="19" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="0" y-origin="0,000000">
+        <Selection>
+          <RouteView id="606"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="0" y-origin="0,000000">
+        <Selection>
+          <RouteView id="606"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1466544674" tv-usec="907029" name="region drag">
+    <StatefulDiffCommand obj-id="664" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <position from="28160" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="19" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="0" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="0" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1466544692" tv-usec="13910" name="normalize">
+    <StatefulDiffCommand obj-id="664" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <scale-amplitude from="1" to="4.51690530777"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="19" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="456704" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="456704" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1466544808" tv-usec="335714" name="region drag">
+    <StatefulDiffCommand obj-id="664" type-name="ARDOUR::AudioRegion">
+      <Changes/>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="19" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="0" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="0" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1466544840" tv-usec="464994" name="delete objects">
+    <StatefulDiffCommand obj-id="639" type-name="ARDOUR::AudioPlaylist">
+      <Changes>
+        <Regions>
+          <Remove id="664"/>
+        </Regions>
+      </Changes>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="19" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="911360" y-origin="0,000000">
+        <Selection>
+          <Region id="664"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="911360" y-origin="0,000000">
+        <Selection/>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1466544847" tv-usec="690238" name="insert file">
+    <StatefulDiffCommand obj-id="639" type-name="ARDOUR::AudioPlaylist">
+      <Changes>
+        <Regions>
+          <Add id="712"/>
+        </Regions>
+      </Changes>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="19" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="911360" y-origin="0,000000">
+        <Selection>
+          <RouteView id="606"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="512" left-frame="911360" y-origin="0,000000">
+        <Selection>
+          <RouteView id="606"/>
         </Selection>
       </SelectionMemento>
     </MementoCommand>
