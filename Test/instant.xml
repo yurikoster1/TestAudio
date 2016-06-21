@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <instant>
   <LastUsedSnapshot name="Test"/>
-  <Editor id="18" mixer-width="Wide" zoom-focus="ZoomFocusPlayhead" zoom="512" snap-to="SnapToBeat" snap-mode="SnapOff" internal-snap-to="SnapToBeat" internal-snap-mode="SnapOff" pre-internal-snap-to="SnapToBeat" pre-internal-snap-mode="SnapOff" edit-point="EditAtMouse" visible-track-count="-1" playhead="183296" left-frame="0" y-origin="0,000000" show-measures="yes" maximised="no" follow-playhead="yes" stationary-playhead="no" region-list-sort-type="ByEndInFile" mouse-mode="MouseObject" join-object-range="no" show-editor-mixer="no" show-editor-list="no" editor-list-page="0" show-marker-lines="no" nudge-clock-value="220500">
-    <geometry x-size="1095" y-size="765" x-pos="55" y-pos="49" edit-horizontal-pane-pos="985" notebook-shrunk="0" edit-vertical-pane-pos="563"/>
+  <Editor id="18" mixer-width="Wide" zoom-focus="ZoomFocusPlayhead" zoom="512" snap-to="SnapToBeat" snap-mode="SnapOff" internal-snap-to="SnapToBeat" internal-snap-mode="SnapOff" pre-internal-snap-to="SnapToBeat" pre-internal-snap-mode="SnapOff" edit-point="EditAtMouse" visible-track-count="-1" playhead="0" left-frame="0" y-origin="0,000000" show-measures="yes" maximised="no" follow-playhead="yes" stationary-playhead="no" region-list-sort-type="ByEndInFile" mouse-mode="MouseObject" join-object-range="no" show-editor-mixer="no" show-editor-list="no" editor-list-page="0" show-marker-lines="no" nudge-clock-value="220500">
+    <geometry x-size="1095" y-size="765" x-pos="288" y-pos="38" edit-horizontal-pane-pos="985" notebook-shrunk="0" edit-vertical-pane-pos="563"/>
     <Buttons>
       <Press/>
       <Release/>
     </Buttons>
-    <Selection/>
+    <Selection>
+      <Region id="255"/>
+    </Selection>
     <RegionList sort-type="ByEndInFile" sort-ascending="yes" show-all="no" show-automatic-regions="yes"/>
   </Editor>
   <Mixer narrow-strips="no" show-mixer="no" show-mixer-list="yes" maximised="no">
