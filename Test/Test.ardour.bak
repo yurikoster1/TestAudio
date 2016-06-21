@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3001" name="Test" sample-rate="44100" id-counter="356" event-counter="419">
+<Session version="3001" name="Test" sample-rate="44100" id-counter="436" event-counter="461">
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
     <Port name="MIDI Clock out" direction="output"/>
@@ -67,24 +67,29 @@
     <Source name="Voice-1%R.wav" type="audio" flags="" id="143" captured-for="Voice" channel="0" origin=""/>
     <Source name="Voice-2%L.wav" type="audio" flags="" id="181" captured-for="Voice" channel="0" origin=""/>
     <Source name="Voice-2%R.wav" type="audio" flags="" id="183" captured-for="Voice" channel="0" origin=""/>
+    <Source name="Drum-1%L.wav" type="audio" flags="" id="392" captured-for="Drum" channel="0" origin=""/>
+    <Source name="Drum-1%R.wav" type="audio" flags="" id="394" captured-for="Drum" channel="0" origin=""/>
   </Sources>
   <Regions>
     <Region name="Voice-1" muted="0" opaque="1" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="280576" position="59392" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="158" type="audio" first-edit="nothing" source-0="141" source-1="143" master-source-0="141" master-source-1="143" channels="2"/>
     <Region name="Voice-1.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="280576" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="4.79068565369" id="166" type="audio" first-edit="nothing" source-0="141" source-1="143" master-source-0="141" master-source-1="143" channels="2"/>
     <Region name="Voice-2" muted="0" opaque="1" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="313344" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="219" type="audio" first-edit="nothing" source-0="181" source-1="183" master-source-0="181" master-source-1="183" channels="2"/>
     <Region name="Voice-2.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="313344" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="6.11464357376" id="227" type="audio" first-edit="nothing" source-0="181" source-1="183" master-source-0="181" master-source-1="183" channels="2"/>
+    <Region name="Drum-1" muted="0" opaque="1" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="361472" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="409" type="audio" first-edit="nothing" source-0="392" source-1="394" master-source-0="392" master-source-1="394" channels="2"/>
   </Regions>
   <Locations>
-    <Location id="179" name="session" start="0" end="345088" flags="IsSessionRange" locked="no" position-lock-style="AudioTime"/>
+    <Location id="179" name="session" start="0" end="361471" flags="IsSessionRange" locked="no" position-lock-style="AudioTime"/>
   </Locations>
   <Bundles/>
   <Routes>
     <Route id="28" name="Master" default-type="audio" flags="MasterOut" active="yes" phase-invert="00" denormal-protection="no" meter-point="MeterPostFader" meter-type="MeterK20" order-key="0" self-solo="no" soloed-by-upstream="0" soloed-by-downstream="0" solo-isolated="no" solo-safe="no">
       <IO name="Master" id="47" direction="Input" default-type="audio" user-latency="0">
         <Port type="audio" name="Master/audio_in 1">
+          <Connection other="Drum/audio_out 1"/>
           <Connection other="Voice/audio_out 1"/>
         </Port>
         <Port type="audio" name="Master/audio_in 2">
+          <Connection other="Drum/audio_out 2"/>
           <Connection other="Voice/audio_out 2"/>
         </Port>
       </IO>
@@ -179,6 +184,59 @@
       <Controllable name="recenable" id="135" flags="Toggle" value="0.000000000000"/>
       <Diskstream flags="Recordable" playlist="Voice.1" name="Voice" id="137" speed="1.000000" capture-alignment="Automatic" record-safe="no" channels="2"/>
     </Route>
+    <Route id="356" name="Drum" default-type="audio" active="yes" phase-invert="00" denormal-protection="no" meter-point="MeterInput" meter-type="MeterPeak" order-key="2" self-solo="no" soloed-by-upstream="0" soloed-by-downstream="0" solo-isolated="no" solo-safe="no" monitoring="" saved-meter-point="MeterPostFader" mode="Normal">
+      <IO name="Drum" id="375" direction="Input" default-type="audio" user-latency="0">
+        <Port type="audio" name="Drum/audio_in 1">
+          <Connection other="Hydrogen:out_L"/>
+          <Connection other="system:capture_1"/>
+        </Port>
+        <Port type="audio" name="Drum/audio_in 2">
+          <Connection other="Hydrogen:out_R"/>
+          <Connection other="system:capture_2"/>
+        </Port>
+      </IO>
+      <IO name="Drum" id="376" direction="Output" default-type="audio" user-latency="0">
+        <Port type="audio" name="Drum/audio_out 1">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port type="audio" name="Drum/audio_out 2">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <Controllable name="solo" id="358" flags="Toggle" value="0.000000000000"/>
+      <Controllable name="mute" id="360" flags="Toggle" value="0.000000000000"/>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="no"/>
+      <Automation/>
+      <RemoteControl id="2"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="366" flags="" value="0.500000000000"/>
+        <Controllable name="pan-width" id="370" flags="" value="1.000000000000"/>
+        <Controllable name="pan-elevation" id="368" flags="" value="0.000000000000"/>
+        <Controllable name="pan-frontback" id="372" flags="" value="0.000000000000"/>
+        <Controllable name="pan-lfe" id="374" flags="" value="0.000000000000"/>
+        <Automation/>
+      </Pannable>
+      <Processor id="380" name="Amp" active="yes" user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="382" flags="GainLike" value="1.000000000000"/>
+      </Processor>
+      <Processor id="383" name="meter-Drum" active="yes" user-latency="0" type="meter"/>
+      <Processor id="377" name="Amp" active="yes" user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="379" flags="GainLike" value="1.000000000000"/>
+      </Processor>
+      <Processor id="384" name="Drum" active="yes" user-latency="0" own-input="yes" own-output="no" output="Drum" type="main-outs" role="Main">
+        <PannerShell bypassed="no" user-panner="" linked-to-route="yes"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="366" flags="" value="0.500000000000"/>
+          <Controllable name="pan-width" id="370" flags="" value="1.000000000000"/>
+          <Controllable name="pan-elevation" id="368" flags="" value="0.000000000000"/>
+          <Controllable name="pan-frontback" id="372" flags="" value="0.000000000000"/>
+          <Controllable name="pan-lfe" id="374" flags="" value="0.000000000000"/>
+          <Automation/>
+        </Pannable>
+      </Processor>
+      <Controllable name="recenable" id="386" flags="Toggle" value="1.000000000000"/>
+      <Diskstream flags="Recordable" playlist="Drum.2" name="Drum" id="388" speed="1.000000" capture-alignment="Automatic" record-safe="no" channels="2"/>
+    </Route>
   </Routes>
   <Playlists>
     <Playlist id="138" name="Voice.1" type="audio" orig-track-id="105" frozen="no" combine-ops="0">
@@ -245,7 +303,39 @@
         </InverseFadeOut>
       </Region>
     </Playlist>
-    <Playlist id="347" name="Drum.1" type="audio" orig-track-id="314" frozen="no" combine-ops="0"/>
+    <Playlist id="389" name="Drum.2" type="audio" orig-track-id="356" frozen="no" combine-ops="0">
+      <Region name="Drum-1.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="361472" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="417" type="audio" first-edit="nothing" source-0="392" source-1="394" master-source-0="392" master-source-1="394" channels="2">
+        <Envelope default="yes"/>
+        <FadeIn>
+          <AutomationList automation-id="fadein" id="418" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1.0000000116861e-07
+64 1
+</events>
+          </AutomationList>
+        </FadeIn>
+        <InverseFadeIn>
+          <AutomationList automation-id="fadein" id="419" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1
+64 1.0000000116861e-07
+</events>
+          </AutomationList>
+        </InverseFadeIn>
+        <FadeOut>
+          <AutomationList automation-id="fadeout" id="420" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1
+64 1.0000000116861e-07
+</events>
+          </AutomationList>
+        </FadeOut>
+        <InverseFadeOut>
+          <AutomationList automation-id="fadeout" id="421" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1.0000000116861e-07
+64 1
+</events>
+          </AutomationList>
+        </InverseFadeOut>
+      </Region>
+    </Playlist>
   </Playlists>
   <UnusedPlaylists/>
   <RouteGroups/>

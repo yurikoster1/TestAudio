@@ -250,4 +250,13 @@
       </Changes>
     </StatefulDiffCommand>
   </UndoTransaction>
+  <UndoTransaction tv-sec="1466543417" tv-usec="641685" name="capture">
+    <StatefulDiffCommand obj-id="469" type-name="ARDOUR::AudioPlaylist">
+      <Changes>
+        <Regions>
+          <Add id="497"/>
+        </Regions>
+      </Changes>
+    </StatefulDiffCommand>
+  </UndoTransaction>
 </UndoHistory>
